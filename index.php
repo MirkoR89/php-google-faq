@@ -20,11 +20,58 @@
   <head>
     <meta charset="utf-8">
     <title>Google PHP</title>
+    <!-- bootstrap CDN -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <!-- Google Font CDN -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
-    <?php foreach ($faqs as $faq) {?>
-      <h2><?php echo $faq['question']; ?></h2>
-      <p><?php echo $faq['answer']; ?></p>
-    <?php } ?>
+    <!-- Header site -->
+    <header>
+      <!-- Navbar brend -->
+      <nav class="navbar navbar-light">
+        <a class="navbar-brand" href="#">
+          <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt=" Google Logo">
+        </a>
+        <a class="navbar-brand" href="#">
+          <span>Privacy e termini</span>
+        </a>
+      </nav>
+      <!-- Navbar menu -->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Introduzione</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Norme sulla privacy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Termini di servizio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tecnologie</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Domande frequenti</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Main site -->
+    <main>
+      <div class="container faq">
+        <?php foreach ($faqs as $faq) {?>
+          <h2><?php echo $faq['question']; ?></h2>
+          <p><?php echo $faq['answer']; ?></p>
+        <?php } ?>
+      </div>
+    </main>
   </body>
 </html>

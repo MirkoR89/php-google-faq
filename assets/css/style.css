@@ -1,0 +1,19 @@
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.faq h2 {
+  color: #3c4043;
+  font-family: 'Google Sans', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  margin: 0;
+  padding: 64px 0 0 0;
+}
+
+.faq p {
+  letter-spacing: .2px;
+  line-height: 24px;
+  padding-top: 20px;
+}
