@@ -2,18 +2,59 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.fixed {
+   position: fixed;
+}
+
+/* Header */
+/* Navbar brand */
+.navbar-brand img {
+  margin-top: 3px;
+  margin-left: 8px;
+}
+
+.navbar-brand span {
+  color: #5f6368;
+  opacity: 1;
+}
+
+.brand {
+  border: none !important;
+}
+
+/* Navbar menu */
+.navbar {
+  padding-bottom: 0;
+  border-bottom: 1px solid lightgrey;
+}
+
+.nav-link {
+  color: #5f6368;
+  margin-right: 20px;
+}
+
+#selected a {
+  color: #3367d6;
+  border-bottom: 3px solid #3367d6;
+}
+
+/* Main site */
+/* Faq */
 .faq h2 {
   color: #3c4043;
   font-family: 'Google Sans', sans-serif;
   font-weight: 500;
   font-size: 24px;
   line-height: 32px;
-  margin: 0;
-  padding: 64px 0 0 0;
+  padding: 64px 64px 0 64px;
 }
 
 .faq p {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: Roboto, arial, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
   letter-spacing: .2px;
   line-height: 24px;
-  padding-top: 20px;
+  padding: 20px 64px 0 64px;
 }

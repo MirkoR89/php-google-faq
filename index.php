@@ -31,18 +31,17 @@
   <body>
     <!-- Header site -->
     <header>
-      <!-- Navbar brend -->
-      <nav class="navbar navbar-light">
+      <!-- Navbar brand -->
+      <nav class="navbar brand">
         <a class="navbar-brand" href="#">
-          <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" alt=" Google Logo">
-        </a>
-        <a class="navbar-brand" href="#">
+          <img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg" class="d-inline-block align-top" alt="Google Logo">
           <span>Privacy e termini</span>
         </a>
       </nav>
-      <!-- Navbar menu -->
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+
+      <!-- Navbar Menu -->
+      <nav class="navbar navbar-expand-lg">
+        <div class=" navbar-collapse">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="#">Introduzione</a>
@@ -56,7 +55,7 @@
             <li class="nav-item">
               <a class="nav-link" href="#">Tecnologie</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item" id="selected" >
               <a class="nav-link" href="#">Domande frequenti</a>
             </li>
           </ul>
